@@ -1,7 +1,12 @@
-Prueba del codigo json en lambda
+# Correccion/Actualizacion Codigo Laboratorio 2.2.2 
 
+## 01.- Usar código actualizado de lambda01.js 
+
+## 02.- Realizar las pruebas del código json en lambda
+
+
+### Para POST
 ```
-Para POST
 {
   "requestContext": { 
     "http": { "method": "POST" } 
@@ -11,7 +16,7 @@ Para POST
 }
 ```
 
-Para GET
+### Para GET
 ```
 {
   "requestContext": {
@@ -25,7 +30,7 @@ Para GET
 }
 ```
 
-Para DELETE
+### Para DELETE
 ```
 {
   "requestContext": {
@@ -41,8 +46,9 @@ Para DELETE
 
 
 
+## 03.- Pruebas realizadas desde terminal (exterior)
 
-POST curl
+### POST curl
 ```
 curl -X POST "https://j9g088j5j2.execute-api.us-east-1.amazonaws.com/items" \
      -H "Content-Type: application/json" \
@@ -52,12 +58,16 @@ curl -X POST "https://j9g088j5j2.execute-api.us-east-1.amazonaws.com/items" \
        "precio": 150
      }'
 ```
+
+### GET curl
 ```
  curl -X GET "https://j9g088j5j2.execute-api.us-east-1.amazonaws.com/items?id=789"
 ```
 Resultado probable
 {"nombre":"Producto desde Terminal","ItemID":"789","precio":150}%
 
+
+### DELETE curl
 ```
  curl -X DELETE "https://j9g088j5j2.execute-api.us-east-1.amazonaws.com/items?id=789"
  ```

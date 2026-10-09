@@ -1,5 +1,9 @@
-# Crear una EC2 por defecto para validar la ejecucion de esta funcion
+# Creacion funcion en Lambda que notifica el cambio de estado en una instancia EC2
+## SNS + Lambda + Event Bridge
 
+```
+Requerimiento: Crear una EC2 por defecto para validar la ejecucion de esta funcion
+```
 
 ## Paso 1: Crear el Tema en Amazon SNS 
 
